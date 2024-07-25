@@ -1,0 +1,112 @@
+.boardinput{
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.boardsaveinput{
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+.button-container .row {
+    display: flex;
+  }
+  .button-container .col {
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  
+
+  .reward-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .reward-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 300px;
+    width: 100%;
+  }
+  
+  .reward-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .reward-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .board-name {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .thanks-message {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .likes-info {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+  
+  .likes-count {
+    font-size: 2em;
+    color: #ff4081;
+    margin-right: 5px;
+  }
+  
+  .likes-text {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .redeem-info {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    color: #ff4081;
+  }
+  
+  .highlight-text {
+    font-weight: bold;
+    color: #2196f3; /* Blue color for highlighting */
+  }
+
+  
+
+  
+  .col a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+  }
+  
+  .col a:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .col a i {
+    font-size: 20px;
+    color: #555;
+  }
+  

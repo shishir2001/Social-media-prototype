@@ -1,0 +1,13 @@
+.boardproduct {
+    display: flex;
+}
+.boardproductsub {
+    flex: 4;
+    padding: 10px;
+    border: 0.1px solid #000;
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    /* Adjust the gap between buttons as needed */
+  }

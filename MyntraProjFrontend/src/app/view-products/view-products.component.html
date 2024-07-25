@@ -1,0 +1,52 @@
+<div class="card flex" style="text-align: left; margin-bottom: 10px">
+  <p-dropdown
+    [options]="boards"
+    [(ngModel)]="selectedBoard"
+    optionLabel="boardName"
+    placeholder="Select a Board"
+    (onChange)="onBoardChange($event)"
+  ></p-dropdown>
+</div>
+
+<div class="card">
+  <p-table [value]="products" [tableStyle]="{ 'min-width': '50rem' }">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Product Id</th>
+        <th>Product Image</th>
+        <th>Product Name</th>
+        <th>Product Type</th>
+        <th>Product Desc</th>
+        <th></th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-product>
+      <tr>
+        <td>{{ product.itemID }}</td>
+        <td>
+          <img
+            src="{{ product.imglink }}"
+            [alt]="product.itemName"
+            width="100"
+            height="70"
+            class="shadow-4"
+          />
+        </td>
+        <td>{{ product.itemName }}</td>
+        <td>{{ product.itemType }}</td>
+        <td>{{ product.itemData }}</td>
+        <td>
+          <p-checkbox
+            [(ngModel)]="product.checked"
+            name="group"
+            [value]="product.itemID"
+          />
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>
+
+<div class="card flex" style="text-align: center; margin-top: 20px">
+  <p-button size="small" (click)="onSubmit()" label="Submit" />
+</div>

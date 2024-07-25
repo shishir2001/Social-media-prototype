@@ -1,0 +1,9 @@
+.boardproduct {
+    display: flex;
+}
+.boardproductsub {
+    flex: 1;
+    padding: 10px;
+    border: 0.1px solid #000;
+    text-align: center;
+}

@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+
+.p-card .p-card-body {
+    padding: 0px !important;
+    margin-top: 10px !important;
+    
+}
+
+.p-card .p-card-content {
+    border: 1px #000 solid !important;
+    padding: 1rem 0 !important;
+}
+
+.p-button.p-button-warning, .p-button-group.p-button-warning > .p-button, .p-splitbutton.p-button-warning > .p-button {
+    color: #ffffff;
+    background: #f97316;
+    border: 1px solid #f97316;
+}
+
+.p-button.p-button-contrast, .p-button-group.p-button-contrast > .p-button, .p-splitbutton.p-button-contrast > .p-button {
+    color: #ffffff;
+    background: #1f2937;
+    border: 1px solid #1f2937;
+    margin-left: 10px !important;
+}
+
+.p-button.p-button-info, .p-button-group.p-button-info > .p-button, .p-splitbutton.p-button-info > .p-button {
+    color: #ffffff;
+    background: #0ea5e9;
+    border: 1px solid #0ea5e9;
+    margin-left: 10px !important;
+}
+
+.p-button.p-button-danger, .p-button-group.p-button-danger > .p-button, .p-splitbutton.p-button-danger > .p-button {
+    color: #ffffff;
+    background: #ef4444;
+    border: 1px solid #ef4444;
+    margin-left: 10px !important;
+}

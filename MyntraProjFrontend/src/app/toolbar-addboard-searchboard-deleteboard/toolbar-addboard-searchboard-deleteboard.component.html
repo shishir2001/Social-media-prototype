@@ -1,0 +1,58 @@
+<div class="card">
+  <p-toolbar>
+    <div class="p-toolbar-group-start">
+      <div
+        style="
+          border: 1px #f423b5 solid;
+          border-radius: 10px;
+          padding-left: 3px;
+          padding-bottom: 5px;
+          padding-right: 8px;
+        "
+      >
+        Myntra Vision Board<i
+          class="pi pi-eye"
+          style="font-size: 1.5rem; position: relative; left: 5px; top: 5px"
+        ></i>
+      </div>
+    </div>
+    <div class="p-toolbar-group-center">
+      <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input pInputText placeholder="Search Boards" />
+      </span>
+    </div>
+    <div class="p-toolbar-group-end">
+      <p-button
+        icon="pi pi-plus"
+        pTooltip="Add board"
+        tooltipPosition="bottom"
+        (onClick)="showDialog()"
+        class="mr-2"
+      />
+    </div>
+  </p-toolbar>
+</div>
+
+<!-- Add Board Dailog -->
+<div class="card flex justify-content-center">
+  <p-dialog
+    header="Add Vision Board"
+    [(visible)]="visible"
+    [style]="{ width: '25rem' }"
+  >
+    <div class="flex align-items-center gap-3 boardinput">
+      <input
+        pInputText
+        id="board"
+        [(ngModel)]="boardName"
+        class="flex-auto"
+        autocomplete="off"
+      />
+    </div>
+
+    <div class="flex justify-content-end gap-2 boardsaveinput">
+      <p-button label="Save" (click)="addBoard()" (onClick)="visible = false" />
+    </div>
+  </p-dialog>
+</div>
